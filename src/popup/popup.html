@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/common.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h2>AI Video Call Helper</h2>
+    <p class="subtitle">Powered by OpenRouter</p>
+
+    <label>OpenRouter API Key</label>
+    <input type="password" id="apiKey" placeholder="sk-or-..." />
+
+    <label>AI Model</label>
+    <input type="text" id="model" list="model-suggestions" placeholder="e.g. openai/gpt-4o-mini" />
+    <datalist id="model-suggestions">
+      <option value="openai/gpt-4o-mini">OpenAI GPT-4o Mini (fast, cheap)</option>
+      <option value="openai/gpt-4o">OpenAI GPT-4o</option>
+      <option value="anthropic/claude-3.5-sonnet">Claude 3.5 Sonnet</option>
+      <option value="anthropic/claude-3-haiku">Claude 3 Haiku (fast)</option>
+      <option value="google/gemini-flash-1.5">Gemini Flash 1.5</option>
+      <option value="meta-llama/llama-3.1-70b-instruct">Llama 3.1 70B</option>
+      <option value="mistralai/mistral-7b-instruct">Mistral 7B</option>
+    </datalist>
+
+    <label>Your Persona / Role</label>
+    <input type="text" id="persona" placeholder="e.g. Data Engineer, Sales Coach, Product Manager" />
+
+    <label>Your Goal for This Call</label>
+    <textarea id="prompt" rows="3" placeholder="e.g. Help me answer technical questions clearly."></textarea>
+
+    <label>Response Tone</label>
+    <select id="tone">
+      <option value="Professional">Professional</option>
+      <option value="Direct">Direct</option>
+      <option value="Friendly">Friendly</option>
+      <option value="Consultative">Consultative</option>
+      <option value="Technical">Technical</option>
+      <option value="Concise">Concise</option>
+    </select>
+
+    <button id="saveBtn">Save Settings</button>
+    <div id="status" class="status"></div>
+
+    <p class="hint">
+      Get an API key at <strong>openrouter.ai</strong><br>
+      Enable captions in Google Meet (CC button) before using.
+    </p>
+  </div>
+  <script src="../utils/constants.js"></script>
+  <script src="../utils/storage.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

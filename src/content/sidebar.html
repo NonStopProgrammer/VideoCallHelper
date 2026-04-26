@@ -1,0 +1,30 @@
+<!-- src/content/sidebar.html -->
+
+<!-- 1. Floating Launcher — positioned center-bottom via sidebar.js -->
+<button id="sc-launcher" class="sc-launcher-btn" title="AI Assistant (Alt+A)">
+  ⚡ AI
+</button>
+
+<!-- 2. The Widget Panel -->
+<div id="sc-widget" class="sc-widget">
+  <div class="sc-header">
+    <span id="sc-title">AI Assistant</span>
+    <div class="sc-header-controls">
+      <button id="sc-clear" title="Clear history">🗑</button>
+      <button id="sc-close" title="Minimize">−</button>
+    </div>
+  </div>
+
+  <div id="sc-history" class="sc-content">
+    <div class="sc-placeholder">
+      Ready to listen.<br>
+      Press <kbd>Alt+A</kbd> or click the button when you need a suggestion.
+    </div>
+  </div>
+
+  <div class="sc-footer">
+    <button id="sc-trigger-btn" class="sc-btn-primary">
+      ⚡ Generate Answer <span class="sc-hotkey">Alt+A</span>
+    </button>
+  </div>
+</div>

@@ -16,11 +16,19 @@
     <label>AI Model</label>
     <input type="text" id="model" list="model-suggestions" placeholder="e.g. openai/gpt-4o-mini" />
     <datalist id="model-suggestions">
-      <option value="openai/gpt-4o-mini">OpenAI GPT-4o Mini (fast, cheap)</option>
-      <option value="openai/gpt-4o">OpenAI GPT-4o</option>
+      <!-- Claude 4.x (latest) -->
+      <option value="anthropic/claude-haiku-4-5">Claude Haiku 4.5 (fast, cheap)</option>
+      <option value="anthropic/claude-sonnet-4-5">Claude Sonnet 4.5</option>
+      <option value="anthropic/claude-opus-4">Claude Opus 4 (most capable)</option>
+      <!-- Claude 3.x -->
       <option value="anthropic/claude-3.5-sonnet">Claude 3.5 Sonnet</option>
       <option value="anthropic/claude-3-haiku">Claude 3 Haiku (fast)</option>
+      <!-- OpenAI -->
+      <option value="openai/gpt-4o-mini">GPT-4o Mini (fast, cheap)</option>
+      <option value="openai/gpt-4o">GPT-4o</option>
+      <!-- Google -->
       <option value="google/gemini-flash-1.5">Gemini Flash 1.5</option>
+      <!-- Open source -->
       <option value="meta-llama/llama-3.1-70b-instruct">Llama 3.1 70B</option>
       <option value="mistralai/mistral-7b-instruct">Mistral 7B</option>
     </datalist>

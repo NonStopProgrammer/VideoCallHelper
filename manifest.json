@@ -51,11 +51,7 @@
   "web_accessible_resources": [
     {
       "resources": ["src/content/sidebar.html", "assets/*"],
-      "matches": [
-        "https://meet.google.com/*",
-        "https://app.zoom.us/wc/*",
-        "https://zoom.us/wc/*"
-      ]
+      "matches": ["<all_urls>"]
     }
   ]
 }
